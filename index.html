@@ -3,7 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <title>Kursus Bahasa Jepang</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #d32f2f;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px;
+      background: #fff;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      margin: 10px auto;
+      padding: 15px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .quiz-box {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      border: none;
+      background: #d32f2f;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #b71c1c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -62,82 +128,19 @@
   <p>© 2026 Kursus Jepang</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  function checkAnswer(answer) {
+    const result = document.getElementById("result");
+
+    if (answer === 'a') {
+      result.innerHTML = "✅ Benar!";
+      result.style.color = "green";
+    } else {
+      result.innerHTML = "❌ Salah!";
+      result.style.color = "red";
+    }
+  }
+</script>
+
 </body>
 </html>
-
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f5f5;
-}
-
-header {
-  background: #d32f2f;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 40px;
-  background: #fff;
-}
-
-section {
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  margin: 10px auto;
-  padding: 15px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.quiz-box {
-  text-align: center;
-}
-
-button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
-  border: none;
-  background: #d32f2f;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #b71c1c;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #222;
-  color: white;
-}
-
-function checkAnswer(answer) {
-  const result = document.getElementById("result");
-
-  if (answer === 'a') {
-    result.innerHTML = "✅ Benar!";
-    result.style.color = "green";
-  } else {
-    result.innerHTML = "❌ Salah!";
-    result.style.color = "red";
-  }
-}
