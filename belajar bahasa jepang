@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Bahasa Jepang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #d32f2f;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px auto;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🇯🇵 Belajar Bahasa Jepang</h1>
+  <p>Selamat datang! Yuk belajar bahasa Jepang dasar</p>
+
+  <div class="card">
+    <h3>Salam</h3>
+    <p>おはよう (Ohayou) = Selamat pagi</p>
+    <p>こんにちは (Konnichiwa) = Selamat siang</p>
+    <p>こんばんは (Konbanwa) = Selamat malam</p>
+  </div>
+
+  <div class="card">
+    <h3>Perkenalan</h3>
+    <p>はじめまして (Hajimemashite)</p>
+    <p>わたしはQodirです (Watashi wa Qodir desu)</p>
+  </div>
+
+  <div class="card">
+    <h3>Angka</h3>
+    <p>1 = いち (ichi)</p>
+    <p>2 = に (ni)</p>
+    <p>3 = さん (san)</p>
+  </div>
+
+</body>
+</html>
